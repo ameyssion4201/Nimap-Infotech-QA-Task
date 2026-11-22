@@ -1,0 +1,12 @@
+Postman API Testing - Setup & Requests Explanation
+
+1. Environment Setup:
+- Created a Postman Environment named "Fieldforceconnect API".
+- Configured the "baseUrl" variable as "https://test.fieldforceconnect.com" to reuse across all requests.
+- Configured an authentication variable ("token") to dynamically store and pass the Bearer token after login.
+
+2. API Requests Tested:
+- POST /api/account/authenticate (Valid Login): Sent valid user credentials to authenticate and verified a 200 OK status code along with the generated authentication token.
+- POST /api/account/authenticate (Invalid Login): Sent invalid credentials to verify proper error handling (400/401 status code).
+- POST Add Customer: Used the Bearer token from the environment variable to add a new customer from the dashboard and validated the success response.
+- GET Customer List & GET Lead Status: Verified retrieval of customer and lead records using valid authorization headers.

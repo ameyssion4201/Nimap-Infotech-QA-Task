@@ -1,0 +1,442 @@
+{
+  "info": {
+    "_postman_id": "cb7ce08b-468d-42db-8abd-664ea0c46c38",
+    "name": "Fieldforceconnect API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59310148",
+    "_collection_link": "https://go.postman.co/collection/59310148-cb7ce08b-468d-42db-8abd-664ea0c46c38?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "https://test.fieldforceconnect.com/api/account/authenticate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://test.fieldforceconnect.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://test.fieldforceconnect.com/auth/login"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"amey04101997@gmail.com\",\"password\":\"Amey@123\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/account/authenticate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://test.fieldforceconnect.com/api/account/authenticate' \\\n  -H 'accept: application/json, text/plain, */*' \\\n  -H 'accept-language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5' \\\n  -H 'content-type: application/json' \\\n  -b 'DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1' \\\n  -H 'origin: https://test.fieldforceconnect.com' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://test.fieldforceconnect.com/auth/login' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36' \\\n  --data-raw '{\"username\":\"amey04101997@gmail.com\",\"password\":\"Amey@123\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Login - Invalid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://test.fieldforceconnect.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://test.fieldforceconnect.com/auth/login"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"amey04101997@gmail.com\",\"password\":\"Ass@123\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/account/authenticate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://test.fieldforceconnect.com/api/account/authenticate' \\\n  -H 'accept: application/json, text/plain, */*' \\\n  -H 'accept-language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5' \\\n  -H 'content-type: application/json' \\\n  -b 'DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1' \\\n  -H 'origin: https://test.fieldforceconnect.com' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://test.fieldforceconnect.com/auth/login' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36' \\\n  --data-raw '{\"username\":\"amey04101997@gmail.com\",\"password\":\"Amey@123\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Customer List",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5"
+          },
+          {
+            "key": "authorization",
+            "value": "{{basic_auth_0yz1}}"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://test.fieldforceconnect.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://test.fieldforceconnect.com/customers"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"CityId\":0,\"CountryId\":0,\"From\":1,\"LeadSourceIds\":\"\",\"LeadStageIds\":\"\",\"LeadTypeIds\":\"\",\"LocalityId\":\"\",\"StateId\":0,\"StatusIds\":\"\",\"TagIds\":\"\",\"TerritoryIds\":\"\",\"Text\":\"\",\"To\":30,\"UserIds\":\"\",\"ReferBy\":\"\",\"FromDate\":\"\",\"ToDate\":\"\",\"DateType\":\"ModifiedDate\",\"CreatedByUserIds\":\"\",\"LeadStatus\":null}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/CRM/Leads",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "CRM",
+            "Leads"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://test.fieldforceconnect.com/api/CRM/Leads' \\\n  -H 'accept: application/json, text/plain, */*' \\\n  -H 'accept-language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5' \\\n  -H 'authorization: {{basic_auth_0yz1}}' \\\n  -H 'content-type: application/json' \\\n  -b $'DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\\u0081\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}' \\\n  -H 'origin: https://test.fieldforceconnect.com' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://test.fieldforceconnect.com/customers' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36' \\\n  --data-raw '{\"CityId\":0,\"CountryId\":0,\"From\":1,\"LeadSourceIds\":\"\",\"LeadStageIds\":\"\",\"LeadTypeIds\":\"\",\"LocalityId\":\"\",\"StateId\":0,\"StatusIds\":\"\",\"TagIds\":\"\",\"TerritoryIds\":\"\",\"Text\":\"\",\"To\":30,\"UserIds\":\"\",\"ReferBy\":\"\",\"FromDate\":\"\",\"ToDate\":\"\",\"DateType\":\"ModifiedDate\",\"CreatedByUserIds\":\"\",\"LeadStatus\":null}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5"
+          },
+          {
+            "key": "authorization",
+            "value": "{{basic_auth_0yz1}}"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://test.fieldforceconnect.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://test.fieldforceconnect.com/customers"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"LeadId\":0,\"IsVisibleToAll\":false,\"LeadName\":\"Nimap Test\",\"RefNo\":\"\",\"ReferredBy\":0,\"PersonName\":\"Rahul Sharma\",\"MobileNo\":\"+91 9876543210\",\"ContactNo\":\"\",\"Email\":\"rahul@test.com\",\"PersonDesignation\":\"\",\"PersonLocation\":\"\",\"Address\":\"\",\"CountryId\":0,\"StateId\":0,\"CityId\":0,\"LocalityId\":0,\"PinCode\":\"\",\"LeadSourceId\":0,\"LeadStageId\":0,\"TerritoryId\":0,\"Website\":\"\",\"OtherInfo\":\"\",\"LeadTypeId\":0,\"ParentLeadId\":0,\"FrontView\":\"\",\"BackView\":\"\",\"CustomFieldValues\":[],\"LeadTags\":[],\"Longitude\":0,\"Latitude\":0,\"LeadContacts\":[]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/CRM/Lead",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "CRM",
+            "Lead"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://test.fieldforceconnect.com/api/CRM/Lead' \\\n  -H 'accept: application/json, text/plain, */*' \\\n  -H 'accept-language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5' \\\n  -H 'authorization: {{basic_auth_0yz1}}' \\\n  -H 'content-type: application/json' \\\n  -b $'DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\\u0081\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}' \\\n  -H 'origin: https://test.fieldforceconnect.com' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://test.fieldforceconnect.com/customers' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36' \\\n  --data-raw '{\"LeadId\":0,\"IsVisibleToAll\":false,\"LeadName\":\"Nimap Test\",\"RefNo\":\"\",\"ReferredBy\":0,\"PersonName\":\"Rahul Sharma\",\"MobileNo\":\"+91 9876543210\",\"ContactNo\":\"\",\"Email\":\"rahul@test.com\",\"PersonDesignation\":\"\",\"PersonLocation\":\"\",\"Address\":\"\",\"CountryId\":0,\"StateId\":0,\"CityId\":0,\"LocalityId\":0,\"PinCode\":\"\",\"LeadSourceId\":0,\"LeadStageId\":0,\"TerritoryId\":0,\"Website\":\"\",\"OtherInfo\":\"\",\"LeadTypeId\":0,\"ParentLeadId\":0,\"FrontView\":\"\",\"BackView\":\"\",\"CustomFieldValues\":[],\"LeadTags\":[],\"Longitude\":0,\"Latitude\":0,\"LeadContacts\":[]}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Lead Status (GET)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5"
+          },
+          {
+            "key": "authorization",
+            "value": "{{basic_auth_0yz1}}"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://test.fieldforceconnect.com/customers"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/CRM/LeadStatus",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "CRM",
+            "LeadStatus"
+          ]
+        },
+        "description": "Generated from cURL: curl --url 'https://test.fieldforceconnect.com/api/CRM/LeadStatus' \\\n  -H 'accept: application/json, text/plain, */*' \\\n  -H 'accept-language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,mr;q=0.6,hi;q=0.5' \\\n  -H 'authorization: {{basic_auth_0yz1}}' \\\n  -b $'DeviceId=22cb8f81-928d-42b0-8107-98ca99696e0a; perf_dv6Tr4n=1; currentUser={\"userId\":1967,\"CompanyDetail\":{\"GroupId\":824,\"CompanyId\":1558,\"GroupName\":\"Default\",\"CompanyName\":\"Nimap infotech\",\"Timezone\":\"India Standard Time\",\"CountryName\":\"\",\"CurrencyName\":\"\",\"CurrencySymbol\":\"à¤°à¥\\u0081\",\"CurrencyId\":1,\"CompanyLogo\":\"\",\"CompanyLogoModifiedDate\":null,\"TrialStartDate\":\"11-20-2026 06:12:39 PM\",\"TrialEndDate\":\"08-16-2029 06:12:39 PM\",\"SubscriptionStatus\":\"Live\",\"DaysRemainig\":998,\"FinancialDate\":null,\"IsDistributorPortalEnabled\":false,\"IsWhatsAppEnabled\":false,\"IsLeadApproval\":false,\"IsBirthdayWish\":false,\"IsAnniversaryWish\":false,\"IsTeam\":false,\"IsSendEmailOnContractEnd\":false,\"IsDeactivateOnContractEnd\":false,\"DeactivateAfterDays\":1,\"IsEmployeeOnboard\":false,\"IsUserWishes\":false,\"IsSendPermissionModifiedMail\":false,\"PermissionModifiedMailRecipients\":\"\",\"IsSendUserSettingsModifiedMail\":false,\"UserSettingsModifiedMailRecipients\":\"\",\"IsCustomerAuditLogs\":false,\"IsUserSettingsAuditLogs\":false,\"IsExportReportNotificationEnabled\":false},\"roles\":{\"CompanyOwner\":false,\"GroupOwner\":true,\"GroupMember\":true,\"ShopDummy\":true,\"IsStarted\":true,\"FreezeDashboard\":false,\"IsTaskAdmin\":false,\"GCAdmin\":true,\"CRMAdmin\":true,\"ExpenseAdmin\":false,\"Reseller\":false,\"Manager\":false},\"accessToken\":\"{{basic_auth_0yz1}}\",\"userDetail\":{\"Status\":200,\"Message\":\"Success\",\"data\":{\"UserId\":1967,\"Name\":\"Amey Sandeep Shirvadkar\",\"MobileNo\":\"8424041168\",\"CountryCode\":\"+44\",\"ContactNo\":\"-\",\"Email\":\"amey04101997@gmail.com\",\"Gender\":\"-\",\"Dob\":\"01/01/1900\",\"Country\":\"India\",\"State\":\"NA\",\"City\":\"NA\",\"StreetAddress\":\"NA\",\"ZipCode\":0,\"IsActive\":true,\"CreatedDate\":\"2026-11-20T12:42:38.447\",\"ModifiedDate\":\"2026-11-20T12:42:38.447\",\"UserImage\":\"NA\",\"CityId\":0,\"StateId\":0,\"CountryId\":0,\"AccessWebLogin\":true}}}' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://test.fieldforceconnect.com/customers' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36'"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "basic_auth_0yz1",
+      "secret": true
+    }
+  ]
+}
